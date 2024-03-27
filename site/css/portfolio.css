@@ -28,6 +28,16 @@ p {
   margin-bottom: var(--gutter);
 }
 
+.banner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#avatar{
+  display: none;
+}
+
 .desktop {
   margin: 0;
   margin-top: calc(var(--gutter) * 5);
@@ -107,4 +117,23 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+@media screen and (width > 700px) { 
+
+  .menu{
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  #avatar{
+    display: flex;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
 }
