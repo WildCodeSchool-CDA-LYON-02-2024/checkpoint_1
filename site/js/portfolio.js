@@ -27,3 +27,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const pinkElements = document.querySelectorAll(".pink-bg");
+
+  pinkElements.forEach(function (element) {
+    element.style.backgroundColor = "#750ff7";
+  });
+});
