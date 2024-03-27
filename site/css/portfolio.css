@@ -97,7 +97,6 @@ p {
 }
 
 .box {
-  max-width: 300px;
   padding: calc(var(--gutter) * 2);
   border: var(--styledBorder);
   margin: calc(var(--gutter) * 1.25);
