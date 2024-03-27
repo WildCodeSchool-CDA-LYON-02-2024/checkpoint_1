@@ -20,3 +20,12 @@ function changeAvatar() {
     avatar.src = 'image/avatar-bis.png';
   }
 }
+
+function changeMission() {
+  var newName = prompt("Please enter your chosen name:");
+  if (newName !== null && newName !== "") {
+    document.getElementById("missionHeader").textContent = newName;
+    document.getElementById("missionHeader").style.color = "white";
+  }
+}
+

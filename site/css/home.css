@@ -39,6 +39,10 @@ main {
   display: flex;
   justify-content: space-between; 
 }
+#missionHeader {
+  color: red;
+}
+
 
 .divone, .divtow {
   flex: 1; 
