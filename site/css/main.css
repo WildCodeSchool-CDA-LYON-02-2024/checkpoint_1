@@ -66,6 +66,10 @@ button:focus {
   color: red;
 }
 
+.projects a {
+  display: flex;
+  align-items: end;
+}
 
 @media (max-width: 701px) {
   .desktop {
@@ -78,4 +82,15 @@ button:focus {
   .skills section {
     width: 100% !important;
   }
+
+  .buttonSection {
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.05);
+    color:#ffffff;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 5% !important;
+    width: 9%;
+  }
+
 }

@@ -90,6 +90,21 @@ p {
   width: 80%;
 }
 
+.buttonSection {
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.05);
+  color:#ffffff;
+  height: 30px;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 9%;
+}
+
+.disabled {
+  opacity: 0.75;
+}
+
 .skills section {
   width: 50%;
 }
@@ -149,5 +164,14 @@ p {
 @media (max-width: 701px) {
   .desktop {
     display: none;
+  }
+
+  .buttonSection {
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.05);
+    color:#ffffff;
+    height: 30px;
+    border-radius: 5px;
+    width: 26%;
   }
 }
