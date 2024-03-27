@@ -17,6 +17,9 @@ button.addEventListener("click", function () {
   document.querySelectorAll(".pink-text").forEach((element) => {
     element.style.color = color;
   });
+  document.querySelectorAll("a").forEach((element) => {
+    element.style.color = color;
+  });
 });
 button.addEventListener("click", function () {
   let userName = prompt("Enter your name");
