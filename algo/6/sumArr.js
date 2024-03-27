@@ -11,10 +11,6 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 
 function sumArr(arrayA, arrayB) {
     // Your code here !
-    if (!Array.isArray(arrayA) || !Array.isArray(arrayB)) {
-        throw new Error("Les deux arguments doivent être des tableaux");
-    }
-
     const longueur = Math.max(arrayA.length, arrayB.length);
 
     const resultat = new Array(longueur);
