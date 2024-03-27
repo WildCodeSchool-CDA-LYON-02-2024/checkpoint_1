@@ -8,7 +8,7 @@ function handleHelp(item) {
 
 
 
- 
+
   
 }
 
@@ -37,4 +37,4 @@ function getRandomColor() {
   }
   return color;
 }
-
+}

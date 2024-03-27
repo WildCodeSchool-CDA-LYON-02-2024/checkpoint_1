@@ -51,6 +51,32 @@ main {
   border-radius: 10px; 
   color: white; 
 }
+.container {
+  display: flex;
+}
+
+.skills {
+  flex: 1;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+
+.skills h2 {
+  margin-top: 0;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills li {
+  margin-bottom: 10px;
+}
+
 
 
 @media screen and (max-width: 768px) {
