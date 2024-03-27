@@ -12,6 +12,23 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 */
 
 function getPoints(results) {
+  let point = 0;
+  let score = 0;
+  for (i = 0; i < results.length; i++) {
+    console.log(results[i]);
+    const oneResult = results[i].split(':');
+    const resultOne = oneResult[0];
+    const resultTwo = oneResult[1];
+    console.log('onresult', oneResult[0]);
+    if (resultOne === resultTwo) {
+      point = 1;
+      score += point;
+    } else if (resultOne > resultTwo) {
+      point = 3;
+      score += point;
+    }
+  }
+  return score;
   // Your code here !
 }
 
