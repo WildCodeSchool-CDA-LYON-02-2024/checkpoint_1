@@ -108,3 +108,105 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+p {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* Mon travail */
+
+@media (min-width: 700px) {
+  header nav .menu {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 700px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .banner .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 700px) {
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .skills .column {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 700px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 700px) {
+  .skills .column:first-child {
+    margin-right: 1rem;
+  }
+  .skills .column:last-child {
+    margin-left: 1rem;
+  }
+}
+
+.projects a.disabled {
+  opacity: 0.5;
+}
+
+@media (min-width: 700px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .projects .box {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+  }
+}
+
+.column:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.button-modify {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-modify:hover {
+  background-color: #6931b6;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 700px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu li {
+    padding: 0.5rem 0;
+  }
+}
