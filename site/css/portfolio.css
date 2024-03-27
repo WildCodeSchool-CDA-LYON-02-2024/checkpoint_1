@@ -110,12 +110,33 @@ p {
 }
 
 @media screen and (min-width: 700px) {
-    .menu {
-      display: flex;
-      margin-left: auto;
-    }
+  .menu {
+    display: flex;
+    margin-left: auto;
+  }
 
-    .introduction {
-      text-align: center;
-    }
+  .introduction {
+    text-align: center;
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  .introduction {
+    text-align: center;
+  }
+
+  .imgDesktop {
+    display: none;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
