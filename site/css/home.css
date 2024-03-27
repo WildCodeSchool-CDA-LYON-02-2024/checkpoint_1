@@ -45,7 +45,7 @@ video {
   transition: background-color 0.2s linear;
   padding: var(--gutter);
   margin: var(--gutter) auto;
-  width: min(100%, calc(var(--gutter) * 19)); 
+  width: min(100%, calc(var(--gutter) * 19));
   aspect-ratio: auto;
 }
 
@@ -68,7 +68,7 @@ th {
   background-color: var(--light);
 }
 
-th, 
+th,
 td {
   border-radius: var(--radius);
   z-index: 1;
