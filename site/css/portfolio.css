@@ -108,3 +108,14 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+@media screen and (min-width: 700px) {
+    .menu {
+      display: flex;
+      margin-left: auto;
+    }
+
+    .introduction {
+      text-align: center;
+    }
+}
