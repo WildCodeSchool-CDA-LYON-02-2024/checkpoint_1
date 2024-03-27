@@ -80,6 +80,7 @@ section img {
 .skills-block {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: center;
 }
 
 .column {
@@ -137,6 +138,7 @@ section img {
 
 footer {
   bottom: 0;
+  width: 100vw;
 }
 
 @media (min-width: 700px) {
@@ -154,9 +156,14 @@ footer {
     flex-direction: row-reverse;
   }
 
+  .box-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+  }
+
   .box {
-    width: 25%;
-    margin: calc(var(--gutter) * 1.25);
+    /*min-width: 25%;*/
+    margin: calc(var(--gutter) * 1);
   }
 }
 
