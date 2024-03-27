@@ -1,6 +1,8 @@
 let avatar = document.getElementById("avatar");
 let name = document.getElementById("firstname");
 let button = document.getElementById("modifyBtn");
+const inputBox = document.getElementById("inputBox");
+const toolList = document.getElementById("toolList");
 
 function changeAvatar() {
   if ((avatar.src = "./image/avatar-bis.png")) {
@@ -26,3 +28,14 @@ button.addEventListener("click", function () {
   document.getElementById("firstname").innerHTML = userName;
   document.getElementById("firstname").style.color = "white";
 });
+
+function addTool() {
+  if (inputBox.value === "") {
+    alert("please add a tool");
+  } else {
+    let li = document.createElement("li");
+    li.innerHTML = inputBox.value;
+    toolList.appendChild(li);
+  }
+  inputBox.value = "";
+}
