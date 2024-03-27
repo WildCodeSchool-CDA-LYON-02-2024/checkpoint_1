@@ -19,6 +19,14 @@ exemple du résultat final :
 
 function theaterSieges() {
   // Your code here !
+    let siege = new Array(26);
+    for (let i = 0; i < 26; i++){
+        siege[i] = new Array(100);
+        for (let j = 0; j < 100; j++) {
+            siege[i][j] = `${i+1}-${j+1}`
+        }
+    }
+    return siege;
 }
 
 module.exports = theaterSieges;
