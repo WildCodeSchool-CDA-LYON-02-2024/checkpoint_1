@@ -10,7 +10,7 @@
   --radius: 5px;
   --borderTemplate: 1px solid;
 
-  --darkColor : #000000;
+  --darkColor: #000000;
   --textColor: #39424e;
   --wildColor: #f76c6c;
   --lightWildColor: #ffc0cb;
@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: 'Dosis', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -31,6 +31,7 @@ body {
 header nav {
   display: flex;
   margin: var(--gutter) calc(var(--gutter) * 2);
+  justify-content: space-between;
 }
 
 header nav img {
@@ -58,4 +59,93 @@ button:focus {
 
 #firstname {
   color: red;
-}  
+}
+
+.description-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#bob-pic {
+  margin-top: 30px;
+}
+
+.desktop-container {
+  display: flex;
+  justify-content: center;
+}
+
+.projects-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.projects-column :nth-child(1) {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.projects-column :nth-child(2) {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.projects-column :nth-child(3) {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.projects-column :nth-child(4) {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.projects {
+  text-align: center;
+}
+a.disabled {
+  opacity: 0.5;
+}
+@media screen and (max-width: 700px) {
+  #desk-pic {
+    display: none;
+  }
+  .projects-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .projects-column :nth-child(1) {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .projects-column :nth-child(2) {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .projects-column :nth-child(3) {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .projects-column :nth-child(4) {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .skills {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    margin-top: 100px;
+  }
+  .skills--title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects-column {
+    display: flex;
+    flex-direction: column;
+  }
+}
