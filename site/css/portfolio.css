@@ -11,6 +11,7 @@
   --textAlign: center;
 }
 
+
 img {
   max-width: 100%;
 }
@@ -28,13 +29,13 @@ p {
   margin-bottom: var(--gutter);
 }
 
-.banner{
+.banner {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-#avatar{
+#avatar {
   display: none;
 }
 
@@ -77,7 +78,7 @@ p {
   border-right: var(--styledBorder);
   border-bottom: var(--styledBorder);
   background-color: var(--cardColor);
-  padding: calc(var(--gutter) * 3.75) calc(var(--gutter)* 2.1875);
+  padding: calc(var(--gutter) * 3.75) calc(var(--gutter) * 2.1875);
   border-radius: var(--radius);
   text-align: var(--textAlign);
   box-shadow: var(--styledShadow);
@@ -101,7 +102,12 @@ p {
 .pink-text {
   color: var(--lightWildColor);
 }
-
+.projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .projects a {
   color: var(--purple);
 }
@@ -118,16 +124,22 @@ p {
 .purple-text {
   color: var(--purple);
 }
+.disabled {
+  opacity: 0.5;
+}
 
-@media screen and (width > 700px) { 
+footer{
+  width: 100%;
+}
 
-  .menu{
+@media screen and (width > 700px) {
+  .menu {
     width: 100%;
     justify-content: flex-end;
     align-items: center;
   }
 
-  #avatar{
+  #avatar {
     display: flex;
   }
 
@@ -135,5 +147,11 @@ p {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+  }
+
+  .projectContent {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
