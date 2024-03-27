@@ -11,6 +11,7 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 
 function sumArr(arrayA, arrayB) {
   // Your code here !
+  
 }
 
 module.exports = sumArr;
