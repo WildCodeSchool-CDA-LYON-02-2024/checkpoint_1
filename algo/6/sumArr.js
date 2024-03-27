@@ -11,6 +11,21 @@ sumArr( ["2", "5", "3"], ["2", "4", "9", "5", "5"] ) should return ["4", "9", "1
 
 function sumArr(arrayA, arrayB) {
   // Your code here !
+  let newArray = [];
+  let maxLength = Math.max(arrayA.length, arrayB.length);
+  for (let i = 0; i < maxLength; i++) {
+    let numA = 0;
+    let numB = 0;
+    if (i < arrayA.length) {
+      numA = parseInt(arrayA[i]);
+    }
+    if (i < arrayB.length) {
+      numB = parseInt(arrayB[i]);
+    }
+    newArray.push((numA + numB).toString());
+  }
+  return newArray;
 }
+
 
 module.exports = sumArr;
