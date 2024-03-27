@@ -6,7 +6,7 @@ const footer = document.getElementsByTagName('footer');
 developerPicture.addEventListener('click', () => {
  developerPicture.src='./image/avatar-sdp.png';
 });
-console.log(description);
+console.log(footer);
 
 const btn = document.getElementById('btn');
 const firstName = document.getElementById('firstname');
@@ -21,7 +21,7 @@ btn.addEventListener('click', () => {
   for (let i = 0; i < listH4.length; i++){
     listH4[i].style.color="#750ff7";
   }
-  footer.style.backgroundColor ="#750ff7";
+  footer[0].style.backgroundColor ="#750ff7";
   
  })
 
