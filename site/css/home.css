@@ -8,10 +8,22 @@ header nav ul {
   justify-content: flex-end;
   width: 100%;
   align-items: center;
+  color: blue;
 }
 
 main {
-  padding: calc(var(--gutter) * 3);
+  .mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+  }
+  
+}
+
+.mid {
+  justify-content: center;
 }
 
 h1 {
@@ -118,3 +130,8 @@ button {
 .problem-no-visible {
   display: none;
 }
+
+@media screen and (max-width: 700px) {
+  #avatar {
+    display: none; }
+  }
