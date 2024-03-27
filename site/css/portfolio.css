@@ -54,7 +54,21 @@ p {
   flex-direction: column;
   align-items: center;
 }
+#changeColorAndName {
+  background-color: #f2f2f2;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 1em;
+}
 
+#changeColorAndName:hover {
+  background-color: black;
+  color: white;
+}
 .desktop {
   display: flex;
   justify-content: center;
