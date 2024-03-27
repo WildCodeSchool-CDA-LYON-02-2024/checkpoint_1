@@ -63,7 +63,7 @@ section img {
 }
 
 .pink-bg {
-  background-color: var(--lightWildColor);
+  background-color: var(--purple);
 }
 
 .skills {
@@ -110,7 +110,7 @@ section img {
 }
 
 .pink-text {
-  color: var(--lightWildColor);
+  color: var(--purple);
 }
 
 .projects {
