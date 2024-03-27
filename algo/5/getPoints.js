@@ -12,7 +12,27 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 */
 
 function getPoints(results) {
-  // Your code here !
+    // Your code here !
+    let scoreTotal = 0;
+
+    for (const result of results) {
+        const [butsEquipe, butsAdversaire] = result.split(':');
+
+        // Déterminer le résultat du match
+        let points;
+        if (butsEquipe > butsAdversaire) {
+            points = 3; // Victoire
+        } else if (butsEquipe === butsAdversaire) {
+            points = 1; // Nul
+        } else {
+            points = 0; // Défaite
+        }
+
+        // Ajouter les points au score total
+        scoreTotal += points;
+    }
+
+    return scoreTotal;
 }
 
 module.exports = getPoints;
