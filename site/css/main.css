@@ -64,4 +64,18 @@ button:focus {
 
 #firstname {
   color: red;
-}  
+}
+
+
+@media (max-width: 701px) {
+  .desktop {
+    display: none;
+  }
+  .skills {
+    display: flex!important;
+    flex-direction: column-reverse!important;
+  }
+  .skills section {
+    width: 100% !important;
+  }
+}
