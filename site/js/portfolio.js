@@ -9,14 +9,21 @@ avatar.addEventListener("click", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const changeNameButton = document.getElementById("changeName");
-  const firstnameSpan = document.getElementById("firstname");
+  const changeColorAndNameButton =
+    document.getElementById("changeColorAndName");
+  const descriptionSection = document.querySelector(".description");
+  const firstNameSpan = document.getElementById("firstname");
 
-  changeNameButton.addEventListener("click", function () {
+  changeColorAndNameButton.addEventListener("click", function () {
     const newName = prompt("Enter your new first name:");
-    if (newName && newName.trim() !== "") {
-      firstnameSpan.textContent = newName.trim();
-      firstnameSpan.style.color = "white";
+    if (newName) {
+      const newColor = prompt("Enter a new hexadecimal color (e.g., #750ff7):");
+      if (newColor && /^#[0-9A-F]{6}$/i.test(newColor)) {
+        descriptionSection.style.backgroundColor = newColor;
+        firstNameSpan.textContent = newName;
+      } else {
+        alert("Please enter a valid hexadecimal color code!");
+      }
     }
   });
 });
