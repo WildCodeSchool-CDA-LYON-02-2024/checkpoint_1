@@ -33,6 +33,10 @@ header nav {
   justify-content: space-between;
   margin: var(--gutter) calc(var(--gutter) * 2);
 }
+main {
+  display: flex;
+  flex-direction: column;
+}
 
 header nav img {
   height: calc(var(--gutter) * 3);
