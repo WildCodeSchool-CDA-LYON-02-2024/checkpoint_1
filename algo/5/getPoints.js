@@ -12,7 +12,18 @@ Pour exemple, si ta fonction recevait le tableau ci-dessous en paramètre, tu de
 */
 
 function getPoints(results) {
-  // Your code here !
+  let points = 0;
+
+  for (let i = 0; i < results.length; i++) {
+    const [ourScore, theirScore] = results[i].split(":").map(Number);
+
+    if (ourScore > theirScore) {
+      points += 3;
+    } else if (ourScore === theirScore) {
+      points += 1;
+    }
+  }
+  return points;
 }
 
 module.exports = getPoints;
