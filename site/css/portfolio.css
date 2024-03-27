@@ -34,6 +34,10 @@ p {
   margin-bottom: calc(var(--gutter) * -0.3125);
 }
 
+.desktop-img {
+  display: none;
+}
+
 .description {
   color: var(--light);
   display: flex;
@@ -52,6 +56,8 @@ p {
 }
 
 .skills {
+  display: flex;
+  flex-direction: column-reverse;
   margin-top: calc(var(--gutter) * -2);
   border-radius: var(--radius);
   padding: 0 10%;
@@ -108,3 +114,34 @@ p {
 .purple-text {
   color: var(--purple);
 }
+
+footer {
+  bottom: 0;
+}
+
+@media (min-width: 700px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  section img {
+    margin-bottom: 3rem;
+  }
+
+  .desktop-img {
+    display: inline-block;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
