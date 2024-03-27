@@ -19,11 +19,11 @@ exemple du résultat final :
 
 function theaterSieges() {
   const rows = [];
-  const numRows = 26;
+  const numberRows = 26;
   const seatsPerRow = 100;
   let currentRow = 1;
 
-  while (currentRow <= numRows) {
+  while (currentRow <= numberRows) {
     const row = [];
     for (let currentSeat = 1; currentSeat <= seatsPerRow; currentSeat++) {
       row.push(`${currentRow}-${currentSeat}`);
