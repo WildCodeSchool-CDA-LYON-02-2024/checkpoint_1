@@ -31,6 +31,7 @@ body {
 header nav {
   display: flex;
   margin: var(--gutter) calc(var(--gutter) * 2);
+
 }
 
 header nav img {

@@ -9,7 +9,9 @@ header nav ul {
   width: 100%;
   align-items: center;
 }
-
+ nav{
+  justify-content: space-between;
+ }
 main {
   padding: calc(var(--gutter) * 3);
 }

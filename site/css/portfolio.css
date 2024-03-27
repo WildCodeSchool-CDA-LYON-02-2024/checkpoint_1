@@ -15,6 +15,10 @@ img {
   max-width: 100%;
 }
 
+header nav{
+  justify-content:space-between;
+}
+
 h1 {
   font-size: calc(var(--gutter) * 1.5);
 }
@@ -27,6 +31,13 @@ p {
   display: flex;
   margin-bottom: var(--gutter);
 }
+
+ .banner {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 
 .desktop {
   margin: 0;
@@ -107,4 +118,41 @@ p {
 
 .purple-text {
   color: var(--purple);
+}
+
+button {
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f76c6c;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 700px) {
+  .desktop{
+    display: none;
+  }
+.skills{
+  flex-wrap: wrap-reverse;
+   /* flex-direction: row-reverse; */
+ 
+}
+ 
+}
+
+
+
+@media (min-width: 700px) {
+.skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+ 
 }
