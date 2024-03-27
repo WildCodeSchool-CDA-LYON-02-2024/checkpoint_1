@@ -10,7 +10,7 @@
 
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <img src="image/logo.svg" alt="logo-purple" />
         <ul class="menu">
           <li><a href="home.html">Instructions</a></li>
@@ -19,27 +19,37 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container">
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
-      <section>
+      <section class="introduction">
+        <h1>FullStack Developper</h1>
+        <p>I code beautifully simple things, and I love what I do.</p>
+        <img id="avatar" src="image/avatar-bis.png" />
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
       </section>
 
       <!-- Second banner with description of your name and your presentation -->
-      <article>
-        <section class="description pink-bg">
-          <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
-          <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
-        </section>
-      </article>
+      <section class="presentation">
+        <div class="description pink-bg">
+          <h2>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h2>
+          <p>
+            Since the beginning of my journey as a freelance developer nearly 10
+            years ago, I've done remote work for agencies, consulted for
+            startups, and collaborated with talented people to create digital
+            products for both business and consumer use. I'm quietly confident,
+            naturally curious, and perpetually working on improving my chops one
+            problem at a time.
+          </p>
+
+          <button id="modifTextButton">Modify text and color</button>
+        </div>
 
       <!-- Bloc of list of skill front end and back end -->
         
       <article class="skills">
-        <h2 class="skills--title">My Skills</h2>
           <section class="column">
               <img src="image/frontend.svg" alt="" />
               <h3>Back-end Developer</h3>
@@ -67,30 +77,61 @@
       </article>
 
       <!-- Third banner with list of all your projects -->
-      <article class="projects">
+      <section class="projects">
+        <div class="heading">
           <h2>My Recent Work</h2>
-          <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
-          <section class="box">
-            <img src="https://mattfarley.ca/img/logos/kybercore.svg" alt="logo-entreprise" />
-            <p>Next level plug and play chassis systems for custom do-it-yourself lightsaber builds.</p>
-            <a class="disabled" >In development</a>
-          </section>
-          <section class="box">
-            <img src="https://mattfarley.ca/img/logos/basin.svg" alt="logo-entreprise" />
-            <p>A powerful, easy-to-configure form backend for designers and developers. No coding required.</p>
+          <p>
+            Here are a few projects I've worked on recently. Want to see more?
+            Email me.
+          </p>
+        </div>
+        <div class="contents">
+          <div class="box">
+            <img
+              src="https://mattfarley.ca/img/logos/kybercore.svg"
+              alt="logo-entreprise"
+            />
+            <p>
+              Next level plug and play chassis systems for custom do-it-yourself
+              lightsaber builds.
+            </p>
+            <a class="disabled">In development</a>
+          </div>
+          <div class="box">
+            <img
+              src="https://mattfarley.ca/img/logos/basin.svg"
+              alt="logo-entreprise"
+            />
+            <p>
+              A powerful, easy-to-configure form backend for designers and
+              developers. No coding required.
+            </p>
             <a href="www.usebasin.com">www.usebasin.com</a>
-          </section>
-          <section class="box">
-            <img src="https://mattfarley.ca/img/logos/ylbuilders.svg" alt="logo-entreprise" />
-            <p>Beautifully simple websites for independent distributors of Young Living Essential Oils.</p>
+          </div>
+          <div class="box">
+            <img
+              src="https://mattfarley.ca/img/logos/ylbuilders.svg"
+              alt="logo-entreprise"
+            />
+            <p>
+              Beautifully simple websites for independent distributors of Young
+              Living Essential Oils.
+            </p>
             <a href="www.ylbuilders.com">www.ylbuilders.com</a>
-          </section>
-          <section class="box">
-            <img src="https://mattfarley.ca/img/logos/dovetail.svg" alt="logo-entreprise" />
-            <p>A space and member management solution for coworking communities both big and small.</p>
-            <a class="disabled" >Shutdown in 2017</a>
-          </section>
-      </article>      
+          </div>
+          <div class="box">
+            <img
+              src="https://mattfarley.ca/img/logos/dovetail.svg"
+              alt="logo-entreprise"
+            />
+            <p>
+              A space and member management solution for coworking communities
+              both big and small.
+            </p>
+            <a class="disabled">Shutdown in 2017</a>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="description pink-bg">
         <img src="image/logo-white.svg" alt='logo-white' />
