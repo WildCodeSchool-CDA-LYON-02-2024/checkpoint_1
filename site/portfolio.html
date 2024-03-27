@@ -10,25 +10,30 @@
 
   <body>
     <header>
-      <nav>
+      <nav class=".nav">
         <img src="image/logo.svg" alt="logo-purple" />
         <ul class="menu">
-          <li><a href="home.html">Instructions</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
+          <li class="li-nav"><a href="home.html">Instructions</a></li>
+          <li class="li-nav"><a href="portfolio.html">Portfolio</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <!-- First banner with title, description, avatar and image desktop -->
-      <!-- You can use the avatar image on the folder image -->
+      <section class="avatar">
+        <figure >
+          <h3>Fullstack Developer</h3>
+          <p>i code beautifully simple thing and i  love whate i do</p>
+          <img id="avatar" src="image/avatar-bis.png" alt="avatar" onclick="changeAvatar()" />
+        </figure>
+      </section>
       <section>
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
       </section>
 
-      <!-- Second banner with description of your name and your presentation -->
+      
       <article>
         <section class="description pink-bg">
           <h1>Hi, I’m <span id="firstname">Matt</span>. Nice to meet you.</h1>
@@ -36,7 +41,9 @@
         </section>
       </article>
 
-      <!-- Bloc of list of skill front end and back end -->
+      <button type="button" onclick="changeText()">
+        Modify text and color
+       </button>
         
       <article class="skills">
         <h2 class="skills--title">My Skills</h2>
@@ -66,7 +73,7 @@
             </section>
       </article>
 
-      <!-- Third banner with list of all your projects -->
+      
       <article class="projects">
           <h2>My Recent Work</h2>
           <p>Here are a few projects I've worked on recently. Want to see more? Email me.</p>
