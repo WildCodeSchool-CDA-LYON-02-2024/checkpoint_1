@@ -5,7 +5,7 @@ body {
 
 header nav ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   width: 100%;
   align-items: center;
 }
@@ -45,7 +45,7 @@ video {
   transition: background-color 0.2s linear;
   padding: var(--gutter);
   margin: var(--gutter) auto;
-  width: min(100%, calc(var(--gutter) * 19)); 
+  width: min(100%, calc(var(--gutter) * 19));
   aspect-ratio: auto;
 }
 
@@ -68,7 +68,7 @@ th {
   background-color: var(--light);
 }
 
-th, 
+th,
 td {
   border-radius: var(--radius);
   z-index: 1;
@@ -117,4 +117,13 @@ button {
 
 .problem-no-visible {
   display: none;
+}
+@media (min-width: 700px) {
+  header nav {
+    justify-content: flex-end;
+  }
+
+  header nav ul {
+    margin-left: auto;
+  }
 }
