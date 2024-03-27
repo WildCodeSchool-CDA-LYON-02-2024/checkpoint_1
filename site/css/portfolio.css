@@ -133,7 +133,21 @@ button {
 opacity: 35%;
 }
 
+.container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 
+}
+
+.desktop {
+display: flex;
+justify-content: center;
+}
+
+.projects h2, .projects p{
+  text-align: center;
+}
 
 @media (max-width: 700px) {
   .desktop{
